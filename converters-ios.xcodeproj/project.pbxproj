@@ -94,8 +94,8 @@
 		D21D5D2128A7659400E1597E /* converters-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D21D5D4C28A7671000E1597E /* Views */,
 				D21D5D2228A7659400E1597E /* converters_iosApp.swift */,
-				D21D5D2428A7659400E1597E /* ContentView.swift */,
 				D21D5D2628A7659600E1597E /* Assets.xcassets */,
 				D21D5D2828A7659600E1597E /* Preview Content */,
 			);
@@ -125,6 +125,14 @@
 				D21D5D3F28A7659600E1597E /* converters_iosUITestsLaunchTests.swift */,
 			);
 			path = "converters-iosUITests";
+			sourceTree = "<group>";
+		};
+		D21D5D4C28A7671000E1597E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D21D5D2428A7659400E1597E /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
