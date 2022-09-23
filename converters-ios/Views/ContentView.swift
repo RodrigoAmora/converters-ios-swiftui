@@ -29,7 +29,7 @@ struct ContentView: View {
                     Button(action: {
                         temperatureConverted = ((Double(temperature) ?? 0.0) * 9/5) + 32
                     }) {
-                        Text("Pacotes")
+                        Text("Converter")
                             .font(.custom("Avenir Medium", size: self.horizontalSizeClass == .compact ? 17 : 24))
                             .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
                     }
