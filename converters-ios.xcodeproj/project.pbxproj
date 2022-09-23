@@ -94,6 +94,7 @@
 		D21D5D2128A7659400E1597E /* converters-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D26D04B228DD72E300114F4F /* Component */,
 				D21D5D4C28A7671000E1597E /* Views */,
 				D21D5D2228A7659400E1597E /* converters_iosApp.swift */,
 				D21D5D2628A7659600E1597E /* Assets.xcassets */,
@@ -133,6 +134,13 @@
 				D21D5D2428A7659400E1597E /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D26D04B228DD72E300114F4F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
