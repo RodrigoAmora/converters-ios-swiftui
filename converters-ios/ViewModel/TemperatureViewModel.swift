@@ -12,7 +12,7 @@ class TemperatureViewModel {
         return 32.0
     }
     
-    func celisusToFahrenheit(temperature: Double) -> Double {
-        return ((Double(temperature) ) * 9/5) + 32
+    func celisusToFahrenheit(temperature: Double?) -> Double {
+        return (temperature! * 9/5) + 32
     }
 }

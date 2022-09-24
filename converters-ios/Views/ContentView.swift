@@ -21,7 +21,7 @@ struct ContentView: View {
         NavigationView {
             GeometryReader { view in
                 VStack {
-                    ConverterComponent(placeholderTextField: "Temperatura em Celsius", options: options)
+                    ConverterComponent(placeholderTextField: "Temperatura em Celsius", options: options, option: OptionsEnum.temperature)
                 }
                 .padding(.top, 100)
                 .padding(.leading, 15)

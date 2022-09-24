@@ -12,12 +12,12 @@ struct ConverterComponent: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     
     let placeholderTextField: String
-
+    let options: [String]
+    let option: OptionsEnum
+    
     @State private var value: String = ""
     @State private var valueConverted: Double = 0.0
-    
-    var onColors = [Color.red, Color.yellow]
-    var offColors = [Color(white: 0.6), Color(white: 0.4)]
+    @State var selectedOptionIndex = 0
 
     var body: some View {
         VStack{
@@ -26,8 +26,18 @@ struct ConverterComponent: View {
                 .keyboardType(.decimalPad)
                 .padding(.trailing, 15)
             
+            Picker("Escolha uma opção", selection: $selectedOptionIndex, content: {
+                ForEach(0..<options.count, content: { index in // <2>
+                    Text(options[index]) // <3>
+                })
+            })
+            
             Button(action: {
-                valueConverted = ((Double(value) ?? 0.0) * 9/5) + 32
+                if(option == OptionsEnum.temperature) {
+                    if(selectedOptionIndex == 0) {
+                        valueConverted = TemperatureViewModel().celisusToFahrenheit(temperature: Double(value))
+                    }
+                }
             }) {
                 Text("Converter")
                     .font(.custom("Avenir Medium", size: self.horizontalSizeClass == .compact ? 17 : 24))
