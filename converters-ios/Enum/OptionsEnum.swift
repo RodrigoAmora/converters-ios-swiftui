@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum OptionsEnum: String {
-    case temperature = "temperatue"
+enum OptionsEnum: Int {
+    case temperature = 0
     
 }
