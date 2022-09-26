@@ -14,9 +14,9 @@
 		D21D5D3428A7659600E1597E /* converters_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21D5D3328A7659600E1597E /* converters_iosTests.swift */; };
 		D21D5D3E28A7659600E1597E /* converters_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21D5D3D28A7659600E1597E /* converters_iosUITests.swift */; };
 		D21D5D4028A7659600E1597E /* converters_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21D5D3F28A7659600E1597E /* converters_iosUITestsLaunchTests.swift */; };
-		D26D04B428DD73B700114F4F /* ConverterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26D04B328DD73B700114F4F /* ConverterComponent.swift */; };
 		D26D04B628DD83C700114F4F /* TemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26D04B528DD83C700114F4F /* TemperatureViewModel.swift */; };
 		D26D04B928DD84DF00114F4F /* OptionsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26D04B828DD84DF00114F4F /* OptionsEnum.swift */; };
+		D2A1792C28E16B3200F0DD5D /* TemperatueConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A1792B28E16B3200F0DD5D /* TemperatueConverterService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,9 @@
 		D21D5D3928A7659600E1597E /* converters-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "converters-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21D5D3D28A7659600E1597E /* converters_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = converters_iosUITests.swift; sourceTree = "<group>"; };
 		D21D5D3F28A7659600E1597E /* converters_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = converters_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D26D04B328DD73B700114F4F /* ConverterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterComponent.swift; sourceTree = "<group>"; };
 		D26D04B528DD83C700114F4F /* TemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewModel.swift; sourceTree = "<group>"; };
 		D26D04B828DD84DF00114F4F /* OptionsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsEnum.swift; sourceTree = "<group>"; };
+		D2A1792B28E16B3200F0DD5D /* TemperatueConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatueConverterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +100,9 @@
 		D21D5D2128A7659400E1597E /* converters-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D2A1792A28E16B1800F0DD5D /* Service */,
 				D26D04BA28DD860300114F4F /* ViewModel */,
 				D26D04B728DD84CC00114F4F /* Enum */,
-				D26D04B228DD72E300114F4F /* Component */,
 				D21D5D4C28A7671000E1597E /* Views */,
 				D21D5D2228A7659400E1597E /* converters_iosApp.swift */,
 				D21D5D2628A7659600E1597E /* Assets.xcassets */,
@@ -144,14 +144,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D26D04B228DD72E300114F4F /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				D26D04B328DD73B700114F4F /* ConverterComponent.swift */,
-			);
-			path = Component;
-			sourceTree = "<group>";
-		};
 		D26D04B728DD84CC00114F4F /* Enum */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +158,14 @@
 				D26D04B528DD83C700114F4F /* TemperatureViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D2A1792A28E16B1800F0DD5D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D2A1792B28E16B3200F0DD5D /* TemperatueConverterService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D21D5D2528A7659400E1597E /* ContentView.swift in Sources */,
-				D26D04B428DD73B700114F4F /* ConverterComponent.swift in Sources */,
 				D26D04B928DD84DF00114F4F /* OptionsEnum.swift in Sources */,
+				D2A1792C28E16B3200F0DD5D /* TemperatueConverterService.swift in Sources */,
 				D21D5D2328A7659400E1597E /* converters_iosApp.swift in Sources */,
 				D26D04B628DD83C700114F4F /* TemperatureViewModel.swift in Sources */,
 			);
